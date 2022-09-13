@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "928455636353",
+    "project_id": "getxsignin-ecc84",
+    "storage_bucket": "getxsignin-ecc84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928455636353:android:55ec6c1d7be27c0ba5a480",
+        "android_client_info": {
+          "package_name": "com.example.flutter_getx_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "928455636353-hr76riv106tqi2ima90h3cuafe7qa8lb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN1tqnZQCg9kJa9VvCV5VvQDv13C8wNHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "928455636353-hr76riv106tqi2ima90h3cuafe7qa8lb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "928455636353-hov98aqptf25jgpmqo9q991065imi8o5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterGetxApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

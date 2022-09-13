@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:getx_sigin/backend/auth_controller.dart';
 
 class WelcomeScreen extends StatelessWidget {
-  const WelcomeScreen({Key? key}) : super(key: key);
+  String email;
+   WelcomeScreen({Key? key, required this.email}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +53,7 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "wobdele@gmail.com",
+                  email,
                   style: TextStyle(
                     fontSize: 18,
                     color: Colors.grey[500],
@@ -61,25 +63,30 @@ class WelcomeScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 100),
-          Container(
-            width: width * 0.5,
-            height: height * 0.08,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(30),
-              image: const DecorationImage(
-                image: AssetImage(
-                  "img/loginbtn.png",
+          GestureDetector(
+            onTap: () {
+              AuthContoller.instance.logOut();
+            },
+            child: Container(
+              width: width * 0.5,
+              height: height * 0.08,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
+                image: const DecorationImage(
+                  image: AssetImage(
+                    "img/loginbtn.png",
+                  ),
+                  fit: BoxFit.cover,
                 ),
-                fit: BoxFit.cover,
               ),
-            ),
-            child: const Center(
-              child: Text(
-                'Sign out',
-                style: TextStyle(
-                  fontSize: 36,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
+              child: const Center(
+                child: Text(
+                  'Sign out',
+                  style: TextStyle(
+                    fontSize: 36,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
                 ),
               ),
             ),
