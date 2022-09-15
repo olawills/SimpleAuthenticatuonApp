@@ -2,7 +2,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_sigin/screens/login.dart';
-import 'package:getx_sigin/screens/signup.dart';
 import 'package:getx_sigin/screens/welcome.dart';
 
 class AuthContoller extends GetxController {
